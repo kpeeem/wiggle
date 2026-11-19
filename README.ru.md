@@ -31,9 +31,13 @@
 
 ## Скриншоты
 
-| Редактор на iPhone | Плёнка | Mac |
-|---|---|---|
-| <img src="docs/iphone.jpg" width="240" alt="Редактор на iPhone со стереоснимком моста Тей"> | <img src="docs/iphone-film.jpg" width="240" alt="Тот же снимок с плёнкой Process"> | <img src="docs/app.jpg" width="420" alt="Приложение для Mac со стереокарточкой Мейбриджа и точкой сведения на фигурах"> |
+<p align="center">
+<img src="docs/iphone.jpg" width="250" alt="Редактор на iPhone со стереоснимком моста Тей">
+&nbsp;&nbsp;
+<img src="docs/iphone-film.jpg" width="250" alt="Тот же снимок с плёнкой Process">
+</p>
+
+<p align="center"><img src="docs/app.jpg" width="760" alt="Приложение для Mac со стереокарточкой Мейбриджа и точкой сведения на фигурах"></p>
 
 ## Галерея
 
@@ -41,9 +45,9 @@
 
 | | | |
 |---|---|---|
-| <img src="docs/gallery/cauldron.gif" width="260" alt="Мейбридж, Cooking eggs at the Witches' Cauldron"> | <img src="docs/gallery/echo.gif" width="260" alt="Соул, Echo Lake"> | <img src="docs/gallery/diana.gif" width="260" alt="Соул, Diana's Baths"> |
+| <img src="docs/gallery/cauldron.gif" width="220" alt="Мейбридж, Cooking eggs at the Witches' Cauldron"> | <img src="docs/gallery/echo.gif" width="220" alt="Соул, Echo Lake"> | <img src="docs/gallery/diana.gif" width="220" alt="Соул, Diana's Baths"> |
 | Эдвард Мейбридж, *Cooking eggs at the Witches' Cauldron*, 1870-е | Джон П. Соул, *Echo Lake, North Conway*, 1860-е | Джон П. Соул, *Diana's Baths, North Conway*, 1860-е |
-| <img src="docs/gallery/bennu.gif" width="260" alt="Валун на астероиде Бенну"> | <img src="docs/gallery/bridge.gif" width="260" alt="Мост Тей на закате"> | <img src="docs/gallery/edinburgh.gif" width="260" alt="Шандвик-плейс, Эдинбург"> |
+| <img src="docs/gallery/bennu.gif" width="220" alt="Валун на астероиде Бенну"> | <img src="docs/gallery/bridge.gif" width="220" alt="Мост Тей на закате"> | <img src="docs/gallery/edinburgh.gif" width="220" alt="Шандвик-плейс, Эдинбург"> |
 | Валун на астероиде Бенну, NASA OSIRIS-REx | Мост Тей, Данди | Шандвик-плейс, Эдинбург |
 
 ## Установка

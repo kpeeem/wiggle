@@ -31,9 +31,13 @@
 
 ## Screenshots
 
-| iPhone editor | Film look | Mac |
-|---|---|---|
-| <img src="docs/iphone.jpg" width="240" alt="iPhone editor with a stereo photo of the Tay Road Bridge"> | <img src="docs/iphone-film.jpg" width="240" alt="The same photo with the Process film look"> | <img src="docs/app.jpg" width="420" alt="Mac app with a Muybridge stereo card and the convergence point on the figures"> |
+<p align="center">
+<img src="docs/iphone.jpg" width="250" alt="iPhone editor with a stereo photo of the Tay Road Bridge">
+&nbsp;&nbsp;
+<img src="docs/iphone-film.jpg" width="250" alt="The same photo with the Process film look">
+</p>
+
+<p align="center"><img src="docs/app.jpg" width="760" alt="Mac app with a Muybridge stereo card and the convergence point on the figures"></p>
 
 ## Gallery
 
@@ -41,9 +45,9 @@ Real stereo pairs from Wikimedia Commons run through the app's own pipeline: nin
 
 | | | |
 |---|---|---|
-| <img src="docs/gallery/cauldron.gif" width="260" alt="Muybridge, Cooking eggs at the Witches' Cauldron"> | <img src="docs/gallery/echo.gif" width="260" alt="Soule, Echo Lake"> | <img src="docs/gallery/diana.gif" width="260" alt="Soule, Diana's Baths"> |
+| <img src="docs/gallery/cauldron.gif" width="220" alt="Muybridge, Cooking eggs at the Witches' Cauldron"> | <img src="docs/gallery/echo.gif" width="220" alt="Soule, Echo Lake"> | <img src="docs/gallery/diana.gif" width="220" alt="Soule, Diana's Baths"> |
 | Eadweard Muybridge, *Cooking eggs at the Witches' Cauldron*, 1870s | John P. Soule, *Echo Lake, North Conway*, 1860s | John P. Soule, *Diana's Baths, North Conway*, 1860s |
-| <img src="docs/gallery/bennu.gif" width="260" alt="A boulder on asteroid Bennu"> | <img src="docs/gallery/bridge.gif" width="260" alt="Tay Road Bridge at sunset"> | <img src="docs/gallery/edinburgh.gif" width="260" alt="Shandwick Place, Edinburgh"> |
+| <img src="docs/gallery/bennu.gif" width="220" alt="A boulder on asteroid Bennu"> | <img src="docs/gallery/bridge.gif" width="220" alt="Tay Road Bridge at sunset"> | <img src="docs/gallery/edinburgh.gif" width="220" alt="Shandwick Place, Edinburgh"> |
 | A boulder on asteroid Bennu, NASA OSIRIS-REx | Tay Road Bridge, Dundee | Shandwick Place, Edinburgh |
 
 ## Install
