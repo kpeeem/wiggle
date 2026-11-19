@@ -8,7 +8,7 @@
 
 *Слева классический wiggle из двух кадров. Справа те же два кадра и достроенные ракурсы между ними.*
 
-![macOS 26](https://img.shields.io/badge/macOS-26-lightgrey) ![iOS 26](https://img.shields.io/badge/iOS-26-lightgrey) ![Swift](https://img.shields.io/badge/Swift-SwiftUI-orange) ![Python](https://img.shields.io/badge/prototype-Python-blue)
+![macOS 26](https://img.shields.io/badge/macOS-26-lightgrey) ![iOS 26](https://img.shields.io/badge/iOS-26-lightgrey) ![Swift](https://img.shields.io/badge/Swift-SwiftUI-orange) ![Python](https://img.shields.io/badge/prototype-Python-blue) ![MIT](https://img.shields.io/badge/license-MIT-green)
 
 ## Что внутри
 
@@ -151,3 +151,7 @@ uv run python evaluate.py
 - [RIFE](https://github.com/hzwer/Practical-RIFE) от hzwer и порт под MLX [rife-mlx](https://github.com/jstepien/rife-mlx), MIT.
 - [FoundationStereo](https://github.com/NVlabs/FoundationStereo) от NVIDIA, исследовательская некоммерческая лицензия. Веса скачивает скрипт установки, в репозитории их нет.
 - Apple VideoToolbox, Core Image, AVFoundation и ImageIO.
+
+## Лицензия
+
+[MIT](LICENSE). У сторонних моделей и датасетов свои лицензии: FoundationStereo только для исследований и некоммерческого использования, сцены Middlebury просят ссылаться на авторов.

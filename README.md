@@ -8,7 +8,7 @@ Smooth wigglegrams from a stereo pair. Wiggle takes an iPhone spatial photo, a s
 
 *Left: the classic two-frame wiggle. Right: the same two frames with generated in-between viewpoints.*
 
-![macOS 26](https://img.shields.io/badge/macOS-26-lightgrey) ![iOS 26](https://img.shields.io/badge/iOS-26-lightgrey) ![Swift](https://img.shields.io/badge/Swift-SwiftUI-orange) ![Python](https://img.shields.io/badge/prototype-Python-blue)
+![macOS 26](https://img.shields.io/badge/macOS-26-lightgrey) ![iOS 26](https://img.shields.io/badge/iOS-26-lightgrey) ![Swift](https://img.shields.io/badge/Swift-SwiftUI-orange) ![Python](https://img.shields.io/badge/prototype-Python-blue) ![MIT](https://img.shields.io/badge/license-MIT-green)
 
 ## What's inside
 
@@ -151,3 +151,7 @@ uv run python evaluate.py
 - [RIFE](https://github.com/hzwer/Practical-RIFE) by hzwer and the MLX port [rife-mlx](https://github.com/jstepien/rife-mlx), MIT.
 - [FoundationStereo](https://github.com/NVlabs/FoundationStereo) by NVIDIA, research and non-commercial license. Weights are downloaded by the setup script, not redistributed.
 - Apple VideoToolbox, Core Image, AVFoundation and ImageIO.
+
+## License
+
+[MIT](LICENSE). Third-party models and datasets keep their own licenses: FoundationStereo is research and non-commercial only, the Middlebury scenes ask for citation.
