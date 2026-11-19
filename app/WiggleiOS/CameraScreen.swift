@@ -97,7 +97,28 @@ struct CameraScreen: View {
         .background(.black)
         .statusBarHidden()
         .animation(.easeOut(duration: 0.2), value: camera.isLandscape)
-        .onAppear { camera.start() }
+        .onAppear {
+            let defaults = UserDefaults.standard
+            guard let paths = defaults.string(forKey: "WiggleOpen") else {
+                camera.start()
+                return
+            }
+            if defaults.object(forKey: "WiggleFrames") != nil {
+                project.options.intermediateFrames = defaults.integer(forKey: "WiggleFrames")
+            }
+            if let look = defaults.string(forKey: "WiggleLook") {
+                project.options.grade.look = look
+            }
+            project.open(paths.split(separator: ",").map { URL(fileURLWithPath: String($0)) })
+            if let point = defaults.string(forKey: "WiggleConverge")?.split(separator: ",").compactMap({ Double($0) }), point.count == 2 {
+                project.options.convergenceX = point[0]
+                project.options.convergenceY = point[1]
+            }
+            Task {
+                try? await Task.sleep(for: .milliseconds(400))
+                showsEditor = true
+            }
+        }
         .fullScreenCover(isPresented: $showsEditor) {
             EditorScreen(project: project)
         }

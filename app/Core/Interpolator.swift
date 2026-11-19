@@ -4,7 +4,24 @@ import CoreVideo
 import Foundation
 import VideoToolbox
 
+#if targetEnvironment(simulator)
 final class Interpolator {
+    static let isAvailable = false
+
+    init(width: Int, height: Int) throws {
+        throw WiggleError("В симуляторе нет интерполяции кадров")
+    }
+
+    func frames(between first: CGImage, and second: CGImage, phases: [Float]) async throws -> [CGImage] {
+        []
+    }
+}
+#else
+final class Interpolator {
+    static var isAvailable: Bool {
+        VTFrameRateConversionConfiguration.isSupported
+    }
+
     private let processor: VTFrameProcessor
     private let configuration: VTFrameRateConversionConfiguration
     private let outputWidth: Int
@@ -110,3 +127,4 @@ final class Interpolator {
         }
     }
 }
+#endif

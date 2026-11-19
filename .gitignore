@@ -18,3 +18,4 @@ wiggle-research.html
 app/build/
 app/Wiggle/Info.plist
 app/WiggleiOS/Info.plist
+app/build-sim/

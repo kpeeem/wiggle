@@ -113,7 +113,13 @@ final class Project {
                 gradedFor = nil
                 buildSeconds = Date().timeIntervalSince(started)
                 let missed = value.aligned.indices.filter { !value.aligned[$0] }.map { String($0 + 1) }
-                notice = missed.isEmpty ? nil : "Не удалось выровнять снимок \(missed.joined(separator: ", ")): мало общих деталей"
+                if !missed.isEmpty {
+                    notice = "Не удалось выровнять снимок \(missed.joined(separator: ", ")): мало общих деталей"
+                } else if options.intermediateFrames > 0 && built.steps.count == built.keyframes {
+                    notice = "Интерполяция кадров на этом устройстве недоступна, показан обычный wiggle"
+                } else {
+                    notice = nil
+                }
                 isWorking = false
                 await applyGrade()
             } catch {

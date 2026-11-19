@@ -3,25 +3,6 @@ revision = 5
 requires-python = ">=3.12"
 
 [[package]]
-name = "wiggle"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "numpy" },
-    { name = "opencv-python-headless" },
-    { name = "pyobjc-framework-quartz" },
-    { name = "scikit-image" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "numpy" },
-    { name = "opencv-python-headless" },
-    { name = "pyobjc-framework-quartz", specifier = ">=13.0" },
-    { name = "scikit-image" },
-]
-
-[[package]]
 name = "imageio"
 version = "2.38.2"
 source = { registry = "https://pypi.org/simple" }
@@ -424,4 +405,23 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d6/e1/f09384869bcf78bae3a794a86d8a90753fb2a6f4646c07ec941ff629cd33/tifffile-2026.11.16.tar.gz", hash = "sha256:d9c246d464f1c3ca9ab62c5225b3ff45578f33629029dbbd9f62f4e901702726", size = 462802, upload-time = "2026-11-17T03:35:19.648Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cf/3a/483491be6f7eb070d1c22b1182bbbc0243e85bf5903fafe3f80b6aeb3dba/tifffile-2026.11.16-py3-none-any.whl", hash = "sha256:d2103c2537f185868f0a880eceba590b316aa1981bd76d91028e5f2eb0e1a6e6", size = 279737, upload-time = "2026-11-17T03:35:18.375Z" },
+]
+
+[[package]]
+name = "wiggle"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "numpy" },
+    { name = "opencv-python-headless" },
+    { name = "pyobjc-framework-quartz" },
+    { name = "scikit-image" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "numpy" },
+    { name = "opencv-python-headless" },
+    { name = "pyobjc-framework-quartz", specifier = ">=13.0" },
+    { name = "scikit-image" },
 ]

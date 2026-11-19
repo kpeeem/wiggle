@@ -166,7 +166,7 @@ func build(_ prepared: Prepared, options: WiggleOptions) async throws -> Wiggle 
             prepared.frames[index], placement: placements[index], sourceSize: size, crop: crop,
             levels: options.matchExposure ? prepared.levels[index] : nil)
     }
-    guard options.intermediateFrames > 0 else {
+    guard options.intermediateFrames > 0, Interpolator.isAvailable else {
         return Wiggle(steps: keyframes, keyframes: keyframes.count, crop: crop, workingSize: size)
     }
     let interpolator = try Interpolator(width: cropWidth, height: cropHeight)
