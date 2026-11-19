@@ -73,7 +73,7 @@ WIGGLE_PROFILE=путь/к/Development.mobileprovision ./scripts/deploy_ios.sh
 
 ### Mac
 
-Скачайте `Wiggle-1.0.0.zip` из [релизов](https://github.com/kpeeem/wiggle/releases/latest), распакуйте, перенесите **Wiggle** в `/Applications` и снимите карантин. Сборка подписана ad-hoc, без нотаризации. Нужна macOS 26 на Apple Silicon.
+Скачайте `Wiggle-1.0.1.zip` из [релизов](https://github.com/kpeeem/wiggle/releases/latest), распакуйте, перенесите **Wiggle** в `/Applications` и снимите карантин. Сборка подписана ad-hoc, без нотаризации. Нужна macOS 26 на Apple Silicon.
 
 ```bash
 xattr -dr com.apple.quarantine /Applications/Wiggle.app
@@ -84,7 +84,7 @@ xattr -dr com.apple.quarantine /Applications/Wiggle.app
 Проверить, что архив собран workflow этого репозитория:
 
 ```bash
-gh attestation verify Wiggle-1.0.0.zip -R kpeeem/wiggle
+gh attestation verify Wiggle-1.0.1.zip -R kpeeem/wiggle
 ```
 
 Собрать самому: нужны Xcode и XcodeGen.

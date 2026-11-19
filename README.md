@@ -73,7 +73,7 @@ The script builds the app, signs it locally with the profile while keeping the a
 
 ### Mac
 
-Download `Wiggle-1.0.0.zip` from [Releases](https://github.com/kpeeem/wiggle/releases/latest), unzip, move **Wiggle** to `/Applications` and clear the download quarantine. The build is ad-hoc signed, not notarized. Requires macOS 26 on Apple silicon.
+Download `Wiggle-1.0.1.zip` from [Releases](https://github.com/kpeeem/wiggle/releases/latest), unzip, move **Wiggle** to `/Applications` and clear the download quarantine. The build is ad-hoc signed, not notarized. Requires macOS 26 on Apple silicon.
 
 ```bash
 xattr -dr com.apple.quarantine /Applications/Wiggle.app
@@ -84,7 +84,7 @@ Drop a spatial HEIC or a few photos into the window, click the subject, press ‚å
 Check that the zip was built by this repository's workflow:
 
 ```bash
-gh attestation verify Wiggle-1.0.0.zip -R kpeeem/wiggle
+gh attestation verify Wiggle-1.0.1.zip -R kpeeem/wiggle
 ```
 
 To build it yourself you need Xcode and XcodeGen:
