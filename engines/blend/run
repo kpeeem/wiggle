@@ -1,0 +1,2 @@
+#!/bin/zsh
+exec uv run --quiet --project "${0:A:h:h:h}" python "${0:A:h}/blend.py" "$@"

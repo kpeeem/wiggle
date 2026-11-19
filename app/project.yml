@@ -1,0 +1,74 @@
+name: Wiggle
+options:
+  deploymentTarget:
+    macOS: "26.0"
+    iOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    MARKETING_VERSION: "0.1"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  Wiggle:
+    type: application
+    platform: macOS
+    sources:
+      - Core
+      - Shared
+      - Wiggle
+    info:
+      path: Wiggle/Info.plist
+      properties:
+        CFBundleDisplayName: Wiggle
+        LSApplicationCategoryType: public.app-category.photography
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: Image
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.image
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.wiggle.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  WiggleiOS:
+    type: application
+    platform: iOS
+    sources:
+      - Core
+      - Shared
+      - WiggleiOS
+    info:
+      path: WiggleiOS/Info.plist
+      properties:
+        CFBundleDisplayName: Wiggle
+        UILaunchScreen: {}
+        ITSAppUsesNonExemptEncryption: false
+        NSPhotoLibraryAddUsageDescription: Чтобы сохранять готовые ролики, GIF и Live Photo в медиатеку
+        NSCameraUsageDescription: Чтобы снимать стереопару сразу двумя объективами
+        UIUserInterfaceStyle: Dark
+        UIRequiresFullScreen: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kpeeem.wiggle
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: Apple Development
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+  wiggle-cli:
+    type: tool
+    platform: macOS
+    sources:
+      - Core
+      - CLI
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.wiggle.cli

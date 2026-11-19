@@ -1,0 +1,18 @@
+#!/bin/zsh
+set -e
+dir=${0:A:h}
+bin=$dir/.build/release/vt
+stale=0
+if [[ ! -x $bin ]]; then
+  stale=1
+fi
+for source in $dir/Package.swift $dir/Sources/*.swift; do
+  if [[ $source -nt $bin ]]; then
+    stale=1
+  fi
+done
+if (( stale )); then
+  swift build -c release --package-path $dir >&2
+  touch $bin
+fi
+exec $bin "$@"
