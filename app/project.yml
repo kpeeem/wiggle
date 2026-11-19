@@ -4,12 +4,15 @@ options:
     macOS: "26.0"
     iOS: "26.0"
   createIntermediateGroups: true
+  developmentLanguage: ru
 settings:
   base:
     SWIFT_VERSION: "5.0"
     CODE_SIGN_STYLE: Manual
     CODE_SIGN_IDENTITY: "-"
-    MARKETING_VERSION: "0.1"
+    MARKETING_VERSION: "1.0.0"
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
     CURRENT_PROJECT_VERSION: "1"
 targets:
   Wiggle:
@@ -23,6 +26,9 @@ targets:
       path: Wiggle/Info.plist
       properties:
         CFBundleDisplayName: Wiggle
+        CFBundleDevelopmentRegion: en
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         LSApplicationCategoryType: public.app-category.photography
         CFBundleDocumentTypes:
           - CFBundleTypeName: Image
@@ -49,6 +55,9 @@ targets:
         ITSAppUsesNonExemptEncryption: false
         NSPhotoLibraryAddUsageDescription: Чтобы сохранять готовые ролики, GIF и Live Photo в медиатеку
         NSCameraUsageDescription: Чтобы снимать стереопару сразу двумя объективами
+        CFBundleDevelopmentRegion: en
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UIUserInterfaceStyle: Dark
         UIRequiresFullScreen: true
         UISupportedInterfaceOrientations:

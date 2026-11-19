@@ -12,7 +12,7 @@ struct Grade: Codable, Equatable {
 }
 
 let filmLooks: [(id: String, title: String, filter: String?)] = [
-    ("none", "Оригинал", nil),
+    ("none", String(localized: "Оригинал"), nil),
     ("chrome", "Chrome", "CIPhotoEffectChrome"),
     ("fade", "Fade", "CIPhotoEffectFade"),
     ("instant", "Instant", "CIPhotoEffectInstant"),

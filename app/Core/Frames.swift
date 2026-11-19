@@ -5,8 +5,8 @@ import ImageIO
 struct WiggleError: LocalizedError {
     let errorDescription: String?
 
-    init(_ message: String) {
-        errorDescription = message
+    init(_ message: String.LocalizationValue) {
+        errorDescription = String(localized: message)
     }
 }
 

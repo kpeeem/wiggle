@@ -1,0 +1,2010 @@
+{
+  "sourceLanguage": "ru",
+  "strings": {
+    "%@ и ещё %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ and %lld more"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ほか%lld件"
+          }
+        }
+      }
+    },
+    "%@ с": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ s"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@秒"
+          }
+        }
+      }
+    },
+    "%lld": {
+      "shouldTranslate": false
+    },
+    "%lld %%, %lld %%": {
+      "shouldTranslate": false
+    },
+    "+%lld кадров": {
+      "localizations": {
+        "ru": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "+%lld кадр"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "+%lld кадра"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "+%lld кадров"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "+%lld кадра"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "+%lld frame"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "+%lld frames"
+                }
+              }
+            }
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%lldコマ"
+          }
+        }
+      }
+    },
+    "1280": {
+      "shouldTranslate": false
+    },
+    "1920": {
+      "shouldTranslate": false
+    },
+    "24": {
+      "shouldTranslate": false
+    },
+    "2560": {
+      "shouldTranslate": false
+    },
+    "30": {
+      "shouldTranslate": false
+    },
+    "3840": {
+      "shouldTranslate": false
+    },
+    "60": {
+      "shouldTranslate": false
+    },
+    "GIF": {
+      "shouldTranslate": false
+    },
+    "Live Photo": {
+      "shouldTranslate": false
+    },
+    "Live Photo сохранено в Фото": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live Photo saved to Photos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live Photoを写真に保存しました"
+          }
+        }
+      }
+    },
+    "MP4, H.264": {
+      "shouldTranslate": false
+    },
+    "MP4, HEVC": {
+      "shouldTranslate": false
+    },
+    "Spatial-снимок": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spatial Photo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "空間写真"
+          }
+        }
+      }
+    },
+    "Wiggle": {
+      "shouldTranslate": false
+    },
+    "В GIF попадает одно качание длиной %@ с, ширина до 720 px. Он повторяется сам.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The GIF holds one %@ s swing, up to 720 px wide, and loops on its own."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GIFには%@秒の1往復が入ります。幅は最大720 pxで、自動でループします。"
+          }
+        }
+      }
+    },
+    "В симуляторе нет интерполяции кадров": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Simulator has no frame interpolation"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "シミュレータではフレーム補間を利用できません"
+          }
+        }
+      }
+    },
+    "Вернуть настройки по умолчанию": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore Defaults"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デフォルトに戻す"
+          }
+        }
+      }
+    },
+    "Видео": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Video"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオ"
+          }
+        }
+      }
+    },
+    "Виньетка": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vignette"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビネット"
+          }
+        }
+      }
+    },
+    "Воспроизвести": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再生"
+          }
+        }
+      }
+    },
+    "Выравнивание": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alignment"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "位置合わせ"
+          }
+        }
+      }
+    },
+    "Готово": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了"
+          }
+        }
+      }
+    },
+    "Движение": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Motion"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動き"
+          }
+        }
+      }
+    },
+    "Длительность": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duration"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "長さ"
+          }
+        }
+      }
+    },
+    "Достроить между снимками": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frames Between Shots"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真間の補間コマ数"
+          }
+        }
+      }
+    },
+    "Замедление у краёв": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ease at Ends"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "端でゆっくり"
+          }
+        }
+      }
+    },
+    "Запись видео не завершилась": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Video writing did not finish"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオの書き出しが完了しませんでした"
+          }
+        }
+      }
+    },
+    "Интерполяция кадров на этом устройстве недоступна, показан обычный wiggle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frame interpolation isn't available on this device, showing a plain wiggle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスではフレーム補間を利用できないため、通常のウィグルを表示しています"
+          }
+        }
+      }
+    },
+    "Интерполяция кадров не поддерживается на этом устройстве": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frame interpolation isn't supported on this device"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスはフレーム補間に対応していません"
+          }
+        }
+      }
+    },
+    "Интерполяция не принимает кадр %lld×%lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frame interpolation can't take a %lld×%lld frame"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フレーム補間は%lld×%lldのフレームに対応していません"
+          }
+        }
+      }
+    },
+    "Исходная": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Original"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オリジナル"
+          }
+        }
+      }
+    },
+    "Кадров в секунду": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frame Rate"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フレームレート"
+          }
+        }
+      }
+    },
+    "Кадры": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frames"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コマ"
+          }
+        }
+      }
+    },
+    "Камера": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラ"
+          }
+        }
+      }
+    },
+    "Камера вернула не оба снимка, попробуйте ещё раз": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The camera didn't return both shots, try again"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラから2枚の写真を取得できませんでした。もう一度お試しください"
+          }
+        }
+      }
+    },
+    "Камера не умеет снимать двумя объективами сразу": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The camera can't shoot with two lenses at once"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このカメラは2つのレンズで同時に撮影できません"
+          }
+        }
+      }
+    },
+    "Качаний за ролик": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swings per Clip"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1本あたりの往復回数"
+          }
+        }
+      }
+    },
+    "Контраст": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contrast"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コントラスト"
+          }
+        }
+      }
+    },
+    "Коснитесь объекта, и он останется на месте": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap a subject to keep it still"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "被写体をタップすると、その位置で固定されます"
+          }
+        }
+      }
+    },
+    "Маятник": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back and Forth"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "往復"
+          }
+        }
+      }
+    },
+    "На этом iPhone нет пары из широкой и сверхширокой камер": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This iPhone doesn't have a wide and ultra wide camera pair"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このiPhoneには広角と超広角のカメラの組み合わせがありません"
+          }
+        }
+      }
+    },
+    "Нажмите на объект в кадре, и он останется на месте. Остальное будет качаться вокруг него.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select a subject in the frame to keep it still. Everything else swings around it."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フレーム内の被写体を選ぶと、その位置で固定され、ほかの部分がその周りで揺れます。"
+          }
+        }
+      }
+    },
+    "Нажмите на объект, который должен стоять на месте": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click the subject that should stay still"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "固定したい被写体をクリック"
+          }
+        }
+      }
+    },
+    "Настройки": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定"
+          }
+        }
+      }
+    },
+    "Насыщ.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saturation"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "彩度"
+          }
+        }
+      }
+    },
+    "Насыщенность": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saturation"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "彩度"
+          }
+        }
+      }
+    },
+    "Не получилось собрать wiggle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't build the wiggle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ウィグルを作成できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось выделить буфер кадра": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't allocate a frame buffer"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フレームバッファを確保できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось выделить кадр видео": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't allocate a video frame"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオフレームを確保できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось выровнять снимок %@: мало общих деталей": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't align shot %@: too few shared details"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真%@の位置を合わせられませんでした。共通する部分が少なすぎます"
+          }
+        }
+      }
+    },
+    "Не удалось декодировать %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't decode %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@をデコードできませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось загрузить выбранные снимки": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't load the selected photos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選択した写真を読み込めませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось записать %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't write %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@を書き出せませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось записать кадр видео": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't write a video frame"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオフレームを書き込めませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось настроить интерполяцию": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't set up interpolation"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "補間を設定できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось настроить камеру": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't set up the camera"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラを設定できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось начать запись видео": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't start writing the video"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオの書き出しを開始できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось подготовить исходный кадр": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't prepare the source frame"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "元のフレームを準備できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось подготовить кадр результата": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't prepare the output frame"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "出力フレームを準備できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось прочитать %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't read %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@を読み込めませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось прочитать кадр результата": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't read the output frame"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "出力フレームを読み込めませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось создать изображение": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't create the image"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画像を作成できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось создать изображение %lld×%lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't create a %lld×%lld image"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld×%lldの画像を作成できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось создать контекст кадра": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't create a frame context"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フレームコンテキストを作成できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось создать файл %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't create the file %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ファイル%@を作成できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось сохранить снимок сверхширокой камеры": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't save the ultra wide shot"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "超広角カメラの写真を保存できませんでした"
+          }
+        }
+      }
+    },
+    "Не удалось сохранить: %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't save: %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存できませんでした：%@"
+          }
+        }
+      }
+    },
+    "Не удалось уменьшить кадр": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't scale down the frame"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フレームを縮小できませんでした"
+          }
+        }
+      }
+    },
+    "Нет доступа к камере. Разрешите его в Настройках": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No camera access. Allow it in Settings"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラへのアクセスがありません。設定で許可してください"
+          }
+        }
+      }
+    },
+    "Нет доступа к медиатеке. Разрешите добавление фото в Настройках": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No access to Photos. Allow adding photos in Settings"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真へのアクセスがありません。設定で写真の追加を許可してください"
+          }
+        }
+      }
+    },
+    "Нужен один spatial-снимок или минимум два снимка одной сцены": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You need one spatial photo or at least two shots of the same scene"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "空間写真1枚、または同じシーンの写真2枚以上が必要です"
+          }
+        }
+      }
+    },
+    "Обработка": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Processing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "処理中"
+          }
+        }
+      }
+    },
+    "Обработка…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Processing…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "処理中…"
+          }
+        }
+      }
+    },
+    "Обратный порядок снимков": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reverse Shot Order"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真の順序を逆にする"
+          }
+        }
+      }
+    },
+    "Один spatial-снимок с iPhone или несколько кадров одной сцены, снятых со сдвигом вбок": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One spatial photo from an iPhone or several shots of a scene taken with a sideways step"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhoneの空間写真1枚、または横にずらして撮った同じシーンの写真数枚"
+          }
+        }
+      }
+    },
+    "Одно качание длится %@ с. Ролик заканчивается там же, где начался, и зацикливается без шва.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One swing lasts %@ s. The clip ends where it started and loops seamlessly."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1往復は%@秒です。最初と同じ位置で終わるので、つなぎ目なくループします。"
+          }
+        }
+      }
+    },
+    "Оригинал": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Original"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オリジナル"
+          }
+        }
+      }
+    },
+    "Открыть": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開く"
+          }
+        }
+      }
+    },
+    "Открыть spatial-фото или несколько снимков": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open a spatial photo or several shots"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "空間写真または複数の写真を開く"
+          }
+        }
+      }
+    },
+    "Открыть из медиатеки": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open from Photos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真から開く"
+          }
+        }
+      }
+    },
+    "Открыть…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開く…"
+          }
+        }
+      }
+    },
+    "Пауза": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pause"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一時停止"
+          }
+        }
+      }
+    },
+    "Перетащите снимки сюда": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drop Photos Here"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ここに写真をドロップ"
+          }
+        }
+      }
+    },
+    "Плёнка": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Film"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フィルム"
+          }
+        }
+      }
+    },
+    "Плёнка %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Film %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フィルム %@"
+          }
+        }
+      }
+    },
+    "По кругу": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loop Forward"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一方向"
+          }
+        }
+      }
+    },
+    "Поверните телефон горизонтально: только так объективы стоят рядом": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn your phone sideways: only then do the lenses sit side by side"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhoneを横向きにしてください。横向きのときだけレンズが左右に並びます"
+          }
+        }
+      }
+    },
+    "Поворот и вертикаль": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rotation and Vertical Offset"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回転と縦のずれ"
+          }
+        }
+      }
+    },
+    "Поделиться": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共有"
+          }
+        }
+      }
+    },
+    "Показать %@ в Finder": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show %@ in Finder"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@をFinderで表示"
+          }
+        }
+      }
+    },
+    "Показать или скрыть настройки": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show or Hide Settings"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定の表示/非表示"
+          }
+        }
+      }
+    },
+    "Положение камеры между снимками": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera position between shots"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真間のカメラ位置"
+          }
+        }
+      }
+    },
+    "Положение камеры: высокие риски это снимки, короткие это достроенные кадры": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera position: tall ticks are your shots, short ticks are generated frames"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラ位置：長い目盛りは撮影した写真、短い目盛りは補間したコマです"
+          }
+        }
+      }
+    },
+    "Поменять порядок снимков": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reverse Shot Order"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真の順序を逆にする"
+          }
+        }
+      }
+    },
+    "Последний результат": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last Result"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最後の結果"
+          }
+        }
+      }
+    },
+    "Постоянная": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Constant"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一定"
+          }
+        }
+      }
+    },
+    "Предпросмотр wiggle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiggle preview"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ウィグルのプレビュー"
+          }
+        }
+      }
+    },
+    "Сбросить": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リセット"
+          }
+        }
+      }
+    },
+    "Сбросить точку": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Point"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ポイントをリセット"
+          }
+        }
+      }
+    },
+    "Сбросить точку сведения": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Convergence Point"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "固定ポイントをリセット"
+          }
+        }
+      }
+    },
+    "Сбросить цвет": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Color"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カラーをリセット"
+          }
+        }
+      }
+    },
+    "Сведение": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convergence"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "固定ポイント"
+          }
+        }
+      }
+    },
+    "Середина сцены": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scene Center"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "シーンの中央"
+          }
+        }
+      }
+    },
+    "Склеить несколько снимков": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combine Several Shots"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複数の写真を合成"
+          }
+        }
+      }
+    },
+    "Скорость": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "速度"
+          }
+        }
+      }
+    },
+    "Снимки слишком сильно расходятся, общей области не осталось": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The shots differ too much, no shared area is left"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真の差が大きすぎて、共通の領域が残りません"
+          }
+        }
+      }
+    },
+    "Снимков: %lld · Достроено: %lld · %lld × %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shots: %lld · Generated: %lld · %lld × %lld"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真：%lld · 補間：%lld · %lld × %lld"
+          }
+        }
+      }
+    },
+    "Снимок %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shot %lld"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真 %lld"
+          }
+        }
+      }
+    },
+    "Снять": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Take Photo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "撮影"
+          }
+        }
+      }
+    },
+    "Собрано за %@ с": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Built in %@ s"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@秒で作成"
+          }
+        }
+      }
+    },
+    "Сохранение": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存中"
+          }
+        }
+      }
+    },
+    "Сохранено в Фото": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved to Photos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真に保存しました"
+          }
+        }
+      }
+    },
+    "Сохранить в Фото": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to Photos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真に保存"
+          }
+        }
+      }
+    },
+    "Сохранить видео или GIF": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save a video or GIF"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオまたはGIFを保存"
+          }
+        }
+      }
+    },
+    "Сохраняются два файла с одним именем, HEIC и MOV. Вместе они составляют Live Photo.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Two files with the same name are saved, HEIC and MOV. Together they make a Live Photo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同じ名前のHEICとMOVの2つのファイルが保存され、合わせてLive Photoになります。"
+          }
+        }
+      }
+    },
+    "Теплота": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warmth"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暖かみ"
+          }
+        }
+      }
+    },
+    "Точка": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Point"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ポイント"
+          }
+        }
+      }
+    },
+    "Точка сведения выбрана": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convergence point set"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "固定ポイントを設定しました"
+          }
+        }
+      }
+    },
+    "Траектория": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Path"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動き方"
+          }
+        }
+      }
+    },
+    "У снимков разные пропорции": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The shots have different aspect ratios"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真の縦横比が異なります"
+          }
+        }
+      }
+    },
+    "Формат": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォーマット"
+          }
+        }
+      }
+    },
+    "Цвет": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Color"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カラー"
+          }
+        }
+      }
+    },
+    "Ширина": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Width"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "幅"
+          }
+        }
+      }
+    },
+    "Экспозиция": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exposure"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "露出"
+          }
+        }
+      }
+    },
+    "Экспорт": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "書き出し"
+          }
+        }
+      }
+    },
+    "Экспортировать": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "書き出す"
+          }
+        }
+      }
+    },
+    "Экспортировать…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "書き出す…"
+          }
+        }
+      }
+    },
+    "Экспорт…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exporting…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "書き出し中…"
+          }
+        }
+      }
+    },
+    "Яркость и контраст": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brightness and Contrast"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明るさとコントラスト"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

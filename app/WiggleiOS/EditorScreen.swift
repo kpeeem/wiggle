@@ -11,12 +11,12 @@ struct GradeTool: Identifiable {
 }
 
 private let gradeTools = [
-    GradeTool(id: "film", title: "Плёнка", symbol: "camera.filters", path: nil, range: 0...1, neutral: 0),
-    GradeTool(id: "exposure", title: "Экспозиция", symbol: "plusminus.circle", path: \.exposure, range: -2...2, neutral: 0),
-    GradeTool(id: "contrast", title: "Контраст", symbol: "circle.lefthalf.filled", path: \.contrast, range: 0.5...1.5, neutral: 1),
-    GradeTool(id: "saturation", title: "Насыщ.", symbol: "drop", path: \.saturation, range: 0...2, neutral: 1),
-    GradeTool(id: "warmth", title: "Теплота", symbol: "thermometer.medium", path: \.warmth, range: -1...1, neutral: 0),
-    GradeTool(id: "vignette", title: "Виньетка", symbol: "circle.dashed", path: \.vignette, range: 0...1, neutral: 0),
+    GradeTool(id: "film", title: String(localized: "Плёнка"), symbol: "camera.filters", path: nil, range: 0...1, neutral: 0),
+    GradeTool(id: "exposure", title: String(localized: "Экспозиция"), symbol: "plusminus.circle", path: \.exposure, range: -2...2, neutral: 0),
+    GradeTool(id: "contrast", title: String(localized: "Контраст"), symbol: "circle.lefthalf.filled", path: \.contrast, range: 0.5...1.5, neutral: 1),
+    GradeTool(id: "saturation", title: String(localized: "Насыщ."), symbol: "drop", path: \.saturation, range: 0...2, neutral: 1),
+    GradeTool(id: "warmth", title: String(localized: "Теплота"), symbol: "thermometer.medium", path: \.warmth, range: -1...1, neutral: 0),
+    GradeTool(id: "vignette", title: String(localized: "Виньетка"), symbol: "circle.dashed", path: \.vignette, range: 0...1, neutral: 0),
 ]
 
 struct EditorScreen: View {
@@ -28,7 +28,7 @@ struct EditorScreen: View {
     @State private var toolID = "film"
     @State private var thumbnails: [String: CGImage] = [:]
 
-    private let formats: [(title: String, format: ExportFormat)] = [("Видео", .hevc), ("Live Photo", .livePhoto), ("GIF", .gif)]
+    private let formats: [(title: String, format: ExportFormat)] = [(String(localized: "Видео"), .hevc), ("Live Photo", .livePhoto), ("GIF", .gif)]
 
     var body: some View {
         GeometryReader { geometry in
@@ -99,7 +99,7 @@ struct EditorScreen: View {
             .frame(height: 44)
             .glassEffect(in: .capsule)
             Spacer()
-            Button(project.isPlaying ? "Пауза" : "Воспроизвести", systemImage: project.isPlaying ? "pause.fill" : "play.fill") {
+            Button(project.isPlaying ? LocalizedStringKey("Пауза") : LocalizedStringKey("Воспроизвести"), systemImage: project.isPlaying ? "pause.fill" : "play.fill") {
                 project.isPlaying.toggle()
             }
             .labelStyle(.iconOnly)
@@ -128,7 +128,7 @@ struct EditorScreen: View {
                 ContentUnavailableView("Не получилось собрать wiggle", systemImage: "exclamationmark.triangle", description: Text(failure))
             }
             if project.isWorking || project.isExporting {
-                ProgressView(project.isExporting ? "Сохранение" : "Обработка")
+                ProgressView(project.isExporting ? LocalizedStringKey("Сохранение") : LocalizedStringKey("Обработка"))
                     .controlSize(.large)
                     .tint(.white)
                     .foregroundStyle(.white)
@@ -274,7 +274,7 @@ struct EditorScreen: View {
         if project.wiggle == nil {
             return " "
         }
-        return project.options.convergenceX == nil ? "Коснитесь объекта, и он останется на месте" : "Точка сведения выбрана"
+        return project.options.convergenceX == nil ? String(localized: "Коснитесь объекта, и он останется на месте") : String(localized: "Точка сведения выбрана")
     }
 
     private var formatPicker: some View {
@@ -342,7 +342,7 @@ struct EditorScreen: View {
         let url = folder.appendingPathComponent("wiggle").appendingPathExtension(suffix)
         guard await project.export(to: url) else { return }
         guard await PHPhotoLibrary.requestAuthorization(for: .addOnly) == .authorized else {
-            saved = "Нет доступа к медиатеке. Разрешите добавление фото в Настройках"
+            saved = String(localized: "Нет доступа к медиатеке. Разрешите добавление фото в Настройках")
             return
         }
         do {
@@ -358,10 +358,10 @@ struct EditorScreen: View {
                     request.addResource(with: .video, fileURL: url, options: nil)
                 }
             }
-            saved = format == .livePhoto ? "Live Photo сохранено в Фото" : "Сохранено в Фото"
+            saved = format == .livePhoto ? String(localized: "Live Photo сохранено в Фото") : String(localized: "Сохранено в Фото")
             savedCount += 1
         } catch {
-            saved = "Не удалось сохранить: \(error.localizedDescription)"
+            saved = String(localized: "Не удалось сохранить: \(error.localizedDescription)")
         }
     }
 }

@@ -88,7 +88,7 @@ struct SettingsPanel: View {
             Section {
                 LabeledContent("Длительность") {
                     Stepper(value: $project.options.duration, in: 1...12, step: 0.5) {
-                        Text(project.options.duration.formatted(.number.precision(.fractionLength(0...1))) + " с")
+                        Text("\(project.options.duration.formatted(.number.precision(.fractionLength(0...1)))) с")
                             .monospacedDigit()
                     }
                 }
@@ -125,17 +125,17 @@ struct SettingsPanel: View {
     private var exportNote: String {
         let cycle = project.options.cycle.formatted(.number.precision(.fractionLength(0...2)))
         if project.options.format == .gif {
-            return "В GIF попадает одно качание длиной \(cycle) с, ширина до 720 px. Он повторяется сам."
+            return String(localized: "В GIF попадает одно качание длиной \(cycle) с, ширина до 720 px. Он повторяется сам.")
         }
         if project.options.format == .livePhoto {
-            return "Сохраняются два файла с одним именем, HEIC и MOV. Вместе они составляют Live Photo."
+            return String(localized: "Сохраняются два файла с одним именем, HEIC и MOV. Вместе они составляют Live Photo.")
         }
-        return "Одно качание длится \(cycle) с. Ролик заканчивается там же, где начался, и зацикливается без шва."
+        return String(localized: "Одно качание длится \(cycle) с. Ролик заканчивается там же, где начался, и зацикливается без шва.")
     }
 }
 
 struct GradeSlider: View {
-    let title: String
+    let title: LocalizedStringKey
     @Binding var value: Double
     let range: ClosedRange<Double>
     let neutral: Double

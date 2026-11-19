@@ -5,6 +5,8 @@
 <p align="center">Smooth wigglegrams from a stereo pair, made on your iPhone or Mac.</p>
 
 <p align="center">
+<a href="https://github.com/kpeeem/wiggle/releases/latest"><img src="https://img.shields.io/github/v/release/kpeeem/wiggle?label=download" alt="Download"></a>
+<a href="https://github.com/kpeeem/wiggle/actions/workflows/release.yml"><img src="https://github.com/kpeeem/wiggle/actions/workflows/release.yml/badge.svg" alt="Build"></a>
 <img src="https://img.shields.io/badge/iOS-26-lightgrey" alt="iOS 26">
 <img src="https://img.shields.io/badge/macOS-26-lightgrey" alt="macOS 26">
 <img src="https://img.shields.io/badge/Swift-SwiftUI-orange" alt="Swift and SwiftUI">
@@ -13,7 +15,7 @@
 
 **English** · [Русский](README.ru.md)
 
-> **TL;DR** — Wiggle turns two or more views of a scene into a smooth looping wigglegram. Shoot with both iPhone cameras at once, open a spatial photo, or chain a few photos taken with a sideways step. The in-between viewpoints come from Apple's on-device neural frame interpolation, nothing leaves the device. Build the Mac app with one script, sideload the iPhone app with your own provisioning profile.
+> **TL;DR** — Wiggle turns two or more views of a scene into a smooth looping wigglegram. Shoot with both iPhone cameras at once, open a spatial photo, or chain a few photos taken with a sideways step. The in-between viewpoints come from Apple's on-device neural frame interpolation, nothing leaves the device. The Mac app is a download, the iPhone app builds with your own provisioning profile. English, Русский and 日本語.
 
 *Above: an 1870s stereo card of Diana's Baths, New Hampshire, by John P. Soule. Left: the classic two-frame wiggle. Right: the same two frames with generated in-between views.*
 
@@ -28,13 +30,16 @@
 | **Convergence point** | Tap the subject and it stays still while the rest of the scene swings around it |
 | **Film looks and grading** | Chrome, Fade, Instant, Process, Transfer, Tonal, Mono, Noir with live thumbnails, plus exposure, contrast, saturation, warmth and vignette |
 | **Export** | HEVC or H.264 video, Live Photo, GIF. Three seconds by default, loops without a seam |
+| **Three languages** | English, Russian and Japanese, picked from the system language |
 
 ## Screenshots
 
 <p align="center">
-<img src="docs/iphone.jpg" width="250" alt="iPhone editor with a stereo photo of the Tay Road Bridge">
+<img src="docs/iphone-en.jpg" width="230" alt="iPhone editor with a stereo photo of the Tay Road Bridge">
 &nbsp;&nbsp;
-<img src="docs/iphone-film.jpg" width="250" alt="The same photo with the Process film look">
+<img src="docs/iphone-film-en.jpg" width="230" alt="The same photo with the Process film look">
+&nbsp;&nbsp;
+<img src="docs/iphone-ja.jpg" width="230" alt="The same editor in Japanese">
 </p>
 
 <p align="center"><img src="docs/app.jpg" width="760" alt="Mac app with a Muybridge stereo card and the convergence point on the figures"></p>
@@ -68,7 +73,21 @@ The script builds the app, signs it locally with the profile while keeping the a
 
 ### Mac
 
-Requires macOS 26 on Apple silicon and Xcode.
+Download `Wiggle-1.0.0.zip` from [Releases](https://github.com/kpeeem/wiggle/releases/latest), unzip, move **Wiggle** to `/Applications` and clear the download quarantine. The build is ad-hoc signed, not notarized. Requires macOS 26 on Apple silicon.
+
+```bash
+xattr -dr com.apple.quarantine /Applications/Wiggle.app
+```
+
+Drop a spatial HEIC or a few photos into the window, click the subject, press ⌘E.
+
+Check that the zip was built by this repository's workflow:
+
+```bash
+gh attestation verify Wiggle-1.0.0.zip -R kpeeem/wiggle
+```
+
+To build it yourself you need Xcode and XcodeGen:
 
 ```bash
 brew install xcodegen
@@ -77,8 +96,6 @@ brew install xcodegen
 ```bash
 git clone https://github.com/kpeeem/wiggle.git && cd wiggle && ./scripts/build_app.sh
 ```
-
-The script prints the path to `Wiggle.app`. Drop a spatial HEIC or a few photos into the window, click the subject, press ⌘E.
 
 <details>
 <summary><b>How it works</b></summary>

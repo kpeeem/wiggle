@@ -5,6 +5,8 @@
 <p align="center">Плавные wiggle-анимации из стереопары прямо на iPhone или Mac.</p>
 
 <p align="center">
+<a href="https://github.com/kpeeem/wiggle/releases/latest"><img src="https://img.shields.io/github/v/release/kpeeem/wiggle?label=download" alt="Скачать"></a>
+<a href="https://github.com/kpeeem/wiggle/actions/workflows/release.yml"><img src="https://github.com/kpeeem/wiggle/actions/workflows/release.yml/badge.svg" alt="Сборка"></a>
 <img src="https://img.shields.io/badge/iOS-26-lightgrey" alt="iOS 26">
 <img src="https://img.shields.io/badge/macOS-26-lightgrey" alt="macOS 26">
 <img src="https://img.shields.io/badge/Swift-SwiftUI-orange" alt="Swift и SwiftUI">
@@ -13,7 +15,7 @@
 
 [English](README.md) · **Русский**
 
-> **TL;DR** — Wiggle превращает два и больше ракурсов сцены в плавную зацикленную wiggle-анимацию. Можно снять обеими камерами iPhone сразу, открыть spatial-снимок или склеить несколько фото со сдвигом вбок. Промежуточные ракурсы достраивает встроенная в систему нейросетевая интерполяция Apple, всё остаётся на устройстве. Приложение для Mac собирается одним скриптом, для iPhone ставится своим профилем разработчика.
+> **TL;DR** — Wiggle превращает два и больше ракурсов сцены в плавную зацикленную wiggle-анимацию. Можно снять обеими камерами iPhone сразу, открыть spatial-снимок или склеить несколько фото со сдвигом вбок. Промежуточные ракурсы достраивает встроенная в систему нейросетевая интерполяция Apple, всё остаётся на устройстве. Приложение для Mac скачивается готовым, для iPhone собирается своим профилем разработчика. Русский, English и 日本語.
 
 *Наверху: стереокарточка 1870-х годов «Diana's Baths» Джона П. Соула, Нью-Гэмпшир. Слева классический wiggle из двух кадров, справа те же два кадра с достроенными ракурсами.*
 
@@ -28,13 +30,16 @@
 | **Точка сведения** | Коснитесь объекта, и он стоит на месте, а остальная сцена качается вокруг него |
 | **Плёнки и цвет** | Chrome, Fade, Instant, Process, Transfer, Tonal, Mono, Noir с живыми миниатюрами, а ещё экспозиция, контраст, насыщенность, теплота и виньетка |
 | **Экспорт** | Видео HEVC или H.264, Live Photo, GIF. По умолчанию 3 секунды, петля без шва |
+| **Три языка** | Русский, английский и японский, выбираются по языку системы |
 
 ## Скриншоты
 
 <p align="center">
-<img src="docs/iphone.jpg" width="250" alt="Редактор на iPhone со стереоснимком моста Тей">
+<img src="docs/iphone.jpg" width="230" alt="Редактор на iPhone со стереоснимком моста Тей">
 &nbsp;&nbsp;
-<img src="docs/iphone-film.jpg" width="250" alt="Тот же снимок с плёнкой Process">
+<img src="docs/iphone-film.jpg" width="230" alt="Тот же снимок с плёнкой Process">
+&nbsp;&nbsp;
+<img src="docs/iphone-ja.jpg" width="230" alt="Тот же редактор на японском">
 </p>
 
 <p align="center"><img src="docs/app.jpg" width="760" alt="Приложение для Mac со стереокарточкой Мейбриджа и точкой сведения на фигурах"></p>
@@ -68,7 +73,21 @@ WIGGLE_PROFILE=путь/к/Development.mobileprovision ./scripts/deploy_ios.sh
 
 ### Mac
 
-Нужны macOS 26 на Apple Silicon и Xcode.
+Скачайте `Wiggle-1.0.0.zip` из [релизов](https://github.com/kpeeem/wiggle/releases/latest), распакуйте, перенесите **Wiggle** в `/Applications` и снимите карантин. Сборка подписана ad-hoc, без нотаризации. Нужна macOS 26 на Apple Silicon.
+
+```bash
+xattr -dr com.apple.quarantine /Applications/Wiggle.app
+```
+
+Перетащите в окно spatial HEIC или несколько фото, щёлкните по объекту, нажмите ⌘E.
+
+Проверить, что архив собран workflow этого репозитория:
+
+```bash
+gh attestation verify Wiggle-1.0.0.zip -R kpeeem/wiggle
+```
+
+Собрать самому: нужны Xcode и XcodeGen.
 
 ```bash
 brew install xcodegen
@@ -77,8 +96,6 @@ brew install xcodegen
 ```bash
 git clone https://github.com/kpeeem/wiggle.git && cd wiggle && ./scripts/build_app.sh
 ```
-
-Скрипт печатает путь к `Wiggle.app`. Перетащите в окно spatial HEIC или несколько фото, щёлкните по объекту, нажмите ⌘E.
 
 <details>
 <summary><b>Как это работает</b></summary>

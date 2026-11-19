@@ -114,9 +114,9 @@ final class Project {
                 buildSeconds = Date().timeIntervalSince(started)
                 let missed = value.aligned.indices.filter { !value.aligned[$0] }.map { String($0 + 1) }
                 if !missed.isEmpty {
-                    notice = "Не удалось выровнять снимок \(missed.joined(separator: ", ")): мало общих деталей"
+                    notice = String(localized: "Не удалось выровнять снимок \(missed.joined(separator: ", ")): мало общих деталей")
                 } else if options.intermediateFrames > 0 && built.steps.count == built.keyframes {
-                    notice = "Интерполяция кадров на этом устройстве недоступна, показан обычный wiggle"
+                    notice = String(localized: "Интерполяция кадров на этом устройстве недоступна, показан обычный wiggle")
                 } else {
                     notice = nil
                 }

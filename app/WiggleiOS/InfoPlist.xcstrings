@@ -1,0 +1,56 @@
+{
+  "sourceLanguage": "ru",
+  "strings": {
+    "CFBundleDisplayName": {
+      "shouldTranslate": false
+    },
+    "CFBundleName": {
+      "shouldTranslate": false
+    },
+    "NSCameraUsageDescription": {
+      "localizations": {
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чтобы снимать стереопару сразу двумя объективами"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To shoot a stereo pair with two lenses at once"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2つのレンズで同時にステレオペアを撮影するため"
+          }
+        }
+      }
+    },
+    "NSPhotoLibraryAddUsageDescription": {
+      "localizations": {
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чтобы сохранять готовые ролики, GIF и Live Photo в медиатеку"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To save finished clips, GIFs and Live Photos to your library"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成したビデオ、GIF、Live Photoをライブラリに保存するため"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

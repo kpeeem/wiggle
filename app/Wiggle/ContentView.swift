@@ -29,7 +29,7 @@ struct ContentView: View {
                 .help("Открыть spatial-фото или несколько снимков")
             }
             ToolbarItemGroup(placement: .primaryAction) {
-                Button(project.isPlaying ? "Пауза" : "Воспроизвести", systemImage: project.isPlaying ? "pause.fill" : "play.fill") {
+                Button(project.isPlaying ? LocalizedStringKey("Пауза") : LocalizedStringKey("Воспроизвести"), systemImage: project.isPlaying ? "pause.fill" : "play.fill") {
                     project.isPlaying.toggle()
                 }
                 .disabled(project.wiggle == nil)
@@ -57,13 +57,13 @@ struct ContentView: View {
 
     private var title: String {
         guard let first = project.urls.first else { return "Wiggle" }
-        return project.urls.count == 1 ? first.lastPathComponent : "\(first.lastPathComponent) и ещё \(project.urls.count - 1)"
+        return project.urls.count == 1 ? first.lastPathComponent : String(localized: "\(first.lastPathComponent) и ещё \(project.urls.count - 1)")
     }
 
     private var subtitle: String {
         guard let wiggle = project.wiggle else { return "" }
         let built = wiggle.steps.count - wiggle.keyframes
-        return "Снимков: \(wiggle.keyframes) · Достроено: \(built) · \(wiggle.steps[0].width) × \(wiggle.steps[0].height)"
+        return String(localized: "Снимков: \(wiggle.keyframes) · Достроено: \(built) · \(wiggle.steps[0].width) × \(wiggle.steps[0].height)")
     }
 
     @ViewBuilder private var stage: some View {
@@ -86,7 +86,7 @@ struct ContentView: View {
                 }
             }
             if project.isWorking || project.isExporting {
-                ProgressView(project.isExporting ? "Экспорт…" : "Обработка…")
+                ProgressView(project.isExporting ? LocalizedStringKey("Экспорт…") : LocalizedStringKey("Обработка…"))
                     .padding(.horizontal, 20)
                     .padding(.vertical, 12)
                     .glassEffect(in: .rect(cornerRadius: 12))

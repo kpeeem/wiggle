@@ -1,0 +1,102 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ !startsWith(github.ref, 'refs/tags/') }}
+
+env:
+  APP_NAME: Wiggle
+  APP_PATH: app/build/Build/Products/Release/Wiggle.app
+
+jobs:
+  build:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Xcode
+        run: |
+          sudo xcode-select -s "$(ls -d /Applications/Xcode_*.app | grep -vi beta | sort -V | tail -1)"
+          xcodebuild -version
+          swift --version
+
+      - name: XcodeGen
+        run: brew install xcodegen
+
+      - name: Test
+        run: ./scripts/check_targets.sh
+
+      - name: Build
+        run: ./scripts/build_app.sh
+
+      - name: Package
+        run: |
+          version=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$APP_PATH/Contents/Info.plist")
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            [[ $GITHUB_REF_NAME == "v$version" ]] || { echo "Tag $GITHUB_REF_NAME does not match version $version" >&2; exit 1; }
+          fi
+          codesign --verify --deep --strict "$APP_PATH"
+          mkdir -p dist
+          ditto -c -k --keepParent "$APP_PATH" "dist/$APP_NAME-$version.zip"
+          cd dist && shasum -a 256 *.zip > SHA256SUMS.txt && cat SHA256SUMS.txt
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: dist
+          path: dist/
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+      artifact-metadata: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: dist
+          path: dist
+
+      - uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: dist/*.zip
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          prev=$(git describe --tags --abbrev=0 --match 'v*' "$GITHUB_REF_NAME^" 2>/dev/null || true)
+          {
+            if [[ -f .github/release-notes.md ]]; then cat .github/release-notes.md; echo; fi
+            if [[ -n $prev ]]; then
+              echo "## Changes"
+              echo
+              git log --no-merges --format='- %s' "$prev..$GITHUB_REF_NAME"
+            fi
+          } > "$RUNNER_TEMP/notes.md"
+          gh release create "$GITHUB_REF_NAME" dist/* \
+            --title "$APP_NAME ${GITHUB_REF_NAME#v}" \
+            --notes-file "$RUNNER_TEMP/notes.md" \
+            --generate-notes \
+            --verify-tag

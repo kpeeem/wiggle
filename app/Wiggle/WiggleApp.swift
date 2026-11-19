@@ -34,8 +34,8 @@ struct WiggleApp: App {
                 .keyboardShortcut("e")
                 .disabled(delegate.project.wiggle == nil || delegate.project.isExporting)
             }
-            CommandMenu("Просмотр") {
-                Button(delegate.project.isPlaying ? "Пауза" : "Воспроизвести") {
+            CommandGroup(after: .toolbar) {
+                Button(delegate.project.isPlaying ? LocalizedStringKey("Пауза") : LocalizedStringKey("Воспроизвести")) {
                     delegate.project.isPlaying.toggle()
                 }
                 .keyboardShortcut(.space, modifiers: [])

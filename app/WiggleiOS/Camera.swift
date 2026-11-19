@@ -40,8 +40,9 @@ final class Camera: NSObject, AVCapturePhotoCaptureDelegate {
         queue.async { self.session.stopRunning() }
     }
 
-    private func report(_ message: String) {
-        DispatchQueue.main.async { self.failure = message }
+    private func report(_ message: String.LocalizationValue) {
+        let text = String(localized: message)
+        DispatchQueue.main.async { self.failure = text }
     }
 
     private func configureAndRun() {

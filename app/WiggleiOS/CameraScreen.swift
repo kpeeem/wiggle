@@ -152,11 +152,11 @@ struct CameraScreen: View {
         .frame(width: 44, height: 44)
         .glassEffect(in: .circle)
         Spacer()
-        QuickChip(title: "+\(project.options.intermediateFrames) кадров") {
+        QuickChip(title: String(localized: "+\(project.options.intermediateFrames) кадров")) {
             let steps = [3, 5, 7, 11, 15]
             project.options.intermediateFrames = steps.first { $0 > project.options.intermediateFrames } ?? steps[0]
         }
-        QuickChip(title: "\(project.options.duration.formatted(.number.precision(.fractionLength(0...1)))) с") {
+        QuickChip(title: String(localized: "\(project.options.duration.formatted(.number.precision(.fractionLength(0...1)))) с")) {
             let steps = [2.0, 3, 5, 8]
             project.options.duration = steps.first { $0 > project.options.duration } ?? steps[0]
         }
@@ -169,7 +169,7 @@ struct CameraScreen: View {
             if let failure = camera.failure {
                 Banner(systemImage: "exclamationmark.triangle", text: failure)
             } else if camera.isRunning && !camera.isLandscape {
-                Banner(systemImage: "rotate.right", text: "Поверните телефон горизонтально: только так объективы стоят рядом")
+                Banner(systemImage: "rotate.right", text: String(localized: "Поверните телефон горизонтально: только так объективы стоят рядом"))
             } else if camera.isCapturing || isLoading {
                 ProgressView()
                     .controlSize(.large)
@@ -266,7 +266,7 @@ struct CameraScreen: View {
         spatialSelection = []
         sequenceSelection = []
         guard !urls.isEmpty else {
-            camera.failure = "Не удалось загрузить выбранные снимки"
+            camera.failure = String(localized: "Не удалось загрузить выбранные снимки")
             return
         }
         project.open(urls)
